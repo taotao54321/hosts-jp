@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat hosts | sed -e 's/\s*#.*$//' -e '/^\s*$/d' | cut -d' ' -f2
